@@ -5,7 +5,7 @@
   $app.config(function($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
-        template: 'hi'
+        templateUrl: 'home/home.html'
       });
   });
 
