@@ -1,0 +1,17 @@
+{
+    "predef": [
+        "angular", "module", "inject",
+
+        "beforeEach", "it", "describe", "expect"
+    ],
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "indent": 2,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "trailing": true,
+    "maxlen": 100
+}
