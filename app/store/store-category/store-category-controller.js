@@ -3,10 +3,10 @@
 
   var $app = angular.module('store');
 
-  $app.controller('StoreCategoryCtrl', function ($scope) {
-    $scope.categories = [
-      {name: 'Two Handed Swords', slug: 'two-handed-swords'}
-    ];
+  $app.controller('StoreCategoryCtrl', function ($scope, $stateParams, Restangular) {
+    $scope.categories = Restangular.all('store/category')
+                                   .all($stateParams.category)
+                                   .getList().$object;
   });
 
 }());

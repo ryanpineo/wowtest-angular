@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var $app = angular.module('store', ['ui.router']);
+  var $app = angular.module('store', ['ui.router', 'restangular']);
   $app.config(function($stateProvider) {
     $stateProvider
       .state('store', {

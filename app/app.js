@@ -1,4 +1,10 @@
 (function () {
   'use strict';
-  angular.module('wowtest', ['templates', 'main', 'home', 'store']);
+
+  var $app = angular.module('wowtest', ['restangular', 'templates', 'main', 'home', 'store']);
+
+  $app.config(function(RestangularProvider) {
+    RestangularProvider.setBaseUrl('http://localhost:8000');
+  });
+
 })();
