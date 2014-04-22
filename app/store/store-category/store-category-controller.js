@@ -3,7 +3,7 @@
 
   var $app = angular.module('store');
 
-  $app.controller('StoreCategoryCtrl', function ($scope, $stateParams) {
-  });
+  $app.controller('StoreCategoryCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
+  }]);
 
 }());

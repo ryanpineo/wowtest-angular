@@ -2,8 +2,8 @@
   'use strict';
 
   var $app = angular.module('main', []);
-  $app.controller('MainCtrl', function ($scope) {
+  $app.controller('MainCtrl', ['$scope', function ($scope) {
     $scope.test = 1;
-  });
+  }]);
 
 }());
