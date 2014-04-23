@@ -2,7 +2,7 @@
     "predef": [
         "angular", "module", "inject",
 
-        "beforeEach", "it", "describe", "expect"
+        "beforeEach", "afterEach", "it", "describe", "expect"
     ],
     "camelcase": true,
     "curly": true,

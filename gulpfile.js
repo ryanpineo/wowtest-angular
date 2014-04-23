@@ -28,10 +28,10 @@ gulp.task('vendorJS', function(){
   //concatenate vendor JS files
   gulp.src([
     V('angular/angular.js'),
-    V('angular-resource/angular-resource.js'),
     V('angular-mocks/angular-mocks.js'),
     V('angular-ui-router/release/angular-ui-router.js'),
-    V('lodash/dist/lodash.js')
+    V('lodash/dist/lodash.js'),
+    V('restangular/dist/restangular.js')
   ])
     .pipe(plugins.concat('lib.js'))
     .pipe(gulp.dest('./build'));
