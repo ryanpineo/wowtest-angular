@@ -30,8 +30,6 @@ gulp.task('vendorJS', function(){
     V('angular/angular.js'),
     V('angular-mocks/angular-mocks.js'),
     V('angular-ui-router/release/angular-ui-router.js'),
-    V('lodash/dist/lodash.js'),
-    V('restangular/dist/restangular.js')
   ])
     .pipe(plugins.concat('lib.js'))
     .pipe(gulp.dest('./build'));
